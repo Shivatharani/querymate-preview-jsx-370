@@ -1,14 +1,14 @@
-// src/components/Display.jsx
+// src/App.js
 import React from 'react';
-import { FaCalculator } from 'react-icons/fa'; // Import a calculator icon
+import Calculator from './components/Calculator';
+import './App.css'; // Make sure to import your CSS
 
-const Display = ({ value }) => {
+function App() {
   return (
-    <div className="display">
-      <FaCalculator className="display-icon" /> {/* Using react-icons for display */}
-      <span className="display-text">{value}</span>
+    <div className="calculator-app">
+      <Calculator />
     </div>
   );
-};
+}
 
-export default Display;
+export default App;
